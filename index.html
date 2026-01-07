@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sposito.art.br</title><!-- 1. Título alterado para Sposito.art.br -->
+    <title>Sposito.art.br</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -15,7 +15,7 @@
 </head>
 <body class="min-h-screen flex flex-col items-center">
 
-    <!-- Hero Section: Título Principal -->
+    <!-- Hero Section -->
     <header class="hero w-full py-20 shadow-xl">
         <div class="max-w-4xl mx-auto text-center px-4">
             <h1 class="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight">Sposito.art.br</h1>
@@ -23,20 +23,18 @@
         </div>
     </header>
 
-    <!-- Main Content: Lista de Artistas -->
+    <!-- Main Content -->
     <main class="w-full max-w-4xl mx-auto p-8 -mt-10">
         
         <!-- Grid de Artistas -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             
-            <!-- Artista 1: Elson Sposito (AGORA EM PRIMEIRO) -->
+            <!-- Artista 1: Elson Sposito -->
             <a href="https://elson.sposito.art.br" target="_blank" class="card-link block bg-white p-6 rounded-xl shadow-lg border-b-4 border-yellow-600">
                 <div class="flex items-center space-x-4">
-                    <!-- Ícone mantido -->
                     <svg class="w-10 h-10 text-yellow-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1 15v-5H8v5h3zm4-5h-3v5h3v-5zM12 5a2 2 0 012 2v2H10V7a2 2 0 012-2z"/></svg>
                     <div>
                         <h2 class="text-2xl font-bold text-gray-800">Elson Sposito</h2>
-                        <!-- 4. Subtítulo e texto de descrição atualizados para Esculturas -->
                         <p class="text-gray-600">Esculturas com técnicas próprias</p>
                     </div>
                 </div>
@@ -44,29 +42,39 @@
                 <span class="mt-3 text-yellow-500 font-semibold block">elson.sposito.art.br &rarr;</span>
             </a>
 
-            <!-- Artista 2: Mateus Sposito (AGORA EM SEGUNDO) -->
+            <!-- Artista 2: Mateus Sposito -->
             <a href="https://mateus.sposito.art.br" target="_blank" class="card-link block bg-white p-6 rounded-xl shadow-lg border-b-4 border-blue-600">
                 <div class="flex items-center space-x-4">
-                    <!-- Ícone mantido -->
                     <svg class="w-10 h-10 text-blue-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1 15v-5H8v5h3zm4-5h-3v5h3v-5zM12 5a2 2 0 012 2v2H10V7a2 2 0 012-2z"/></svg>
                     <div>
                         <h2 class="text-2xl font-bold text-gray-800">Mateus Sposito</h2>
-                        <!-- 5. Subtítulo atualizado -->
                         <p class="text-gray-600">Esculturas personalizadas em resina</p>
                     </div>
                 </div>
-                <!-- 5. Texto de descrição atualizado (removendo "UV") -->
                 <p class="mt-4 text-gray-700">Explore a galeria de peças personalizadas em resina e o processo de criação.</p>
                 <span class="mt-3 text-blue-500 font-semibold block">mateus.sposito.art.br &rarr;</span>
             </a>
-
-            <!-- 3. Botão "Novo Artista" removido -->
             
+        </div>
+
+        <!-- Seção de Venda Direta (Mercado Livre) -->
+        <div class="w-full text-center py-10 bg-white rounded-2xl shadow-md border border-gray-100">
+            <h3 class="text-2xl font-extrabold text-gray-800 mb-6 px-4">Adquira nossas obras online</h3>
+            <a href="https://lista.mercadolivre.com.br/_CustId_3092494021" 
+               target="_blank" 
+               class="bg-[#FFF159] hover:bg-[#FFE600] text-gray-900 font-bold py-4 px-12 rounded-lg transition-all duration-300 shadow-sm hover:shadow-md inline-flex items-center space-x-3 transform hover:-translate-y-0.5 border border-gray-200">
+                <!-- Ícone simples simulando sacola/loja -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                </svg>
+                <span>Mercado Livre</span>
+            </a>
         </div>
 
     </main>
 
-    <footer class="w-full text-center py-6 mt-12 text-gray-500 text-sm">
+    <!-- Footer -->
+    <footer class="w-full text-center py-8 mt-auto text-gray-500 text-sm">
         <p>Desenvolvido pela Família Sposito. &copy; 2025</p>
     </footer>
 
