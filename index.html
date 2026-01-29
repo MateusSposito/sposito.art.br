@@ -11,6 +11,7 @@
         .hero { background: linear-gradient(135deg, #1a237e 0%, #3f51b5 100%); color: white; }
         .card-link { transition: transform 0.3s ease, box-shadow 0.3s ease; }
         .card-link:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); }
+        .btn-insta { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: white; }
     </style>
 </head>
 <body class="min-h-screen flex flex-col items-center">
@@ -35,7 +36,7 @@
                     <svg class="w-10 h-10 text-yellow-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1 15v-5H8v5h3zm4-5h-3v5h3v-5zM12 5a2 2 0 012 2v2H10V7a2 2 0 012-2z"/></svg>
                     <div>
                         <h2 class="text-2xl font-bold text-gray-800">Elson Sposito</h2>
-                        <p class="text-gray-600">Esculturas com técnicas próprias</p>
+                        <p class="text-gray-600 font-medium">2ª Geração</p>
                     </div>
                 </div>
                 <p class="mt-4 text-gray-700">Descubra as esculturas exclusivas do Elson, desenvolvidas com foco em formas e materiais inovadores. Uma arte que explora novas dimensões e texturas.</p>
@@ -48,7 +49,7 @@
                     <svg class="w-10 h-10 text-blue-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1 15v-5H8v5h3zm4-5h-3v5h3v-5zM12 5a2 2 0 012 2v2H10V7a2 2 0 012-2z"/></svg>
                     <div>
                         <h2 class="text-2xl font-bold text-gray-800">Mateus Sposito</h2>
-                        <p class="text-gray-600">Esculturas personalizadas em resina</p>
+                        <p class="text-gray-600 font-medium">3ª Geração</p>
                     </div>
                 </div>
                 <p class="mt-4 text-gray-700">Explore a galeria de peças personalizadas em resina e o processo de criação.</p>
@@ -57,18 +58,31 @@
             
         </div>
 
-        <!-- Seção de Venda Direta (Mercado Livre) -->
-        <div class="w-full text-center py-10 bg-white rounded-2xl shadow-md border border-gray-100">
-            <h3 class="text-2xl font-extrabold text-gray-800 mb-6 px-4">Adquira nossas obras online</h3>
-            <a href="https://lista.mercadolivre.com.br/_CustId_3092494021" 
-               target="_blank" 
-               class="bg-[#FFF159] hover:bg-[#FFE600] text-gray-900 font-bold py-4 px-12 rounded-lg transition-all duration-300 shadow-sm hover:shadow-md inline-flex items-center space-x-3 transform hover:-translate-y-0.5 border border-gray-200">
-                <!-- Ícone simples simulando sacola/loja -->
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-                </svg>
-                <span>Mercado Livre</span>
-            </a>
+        <!-- Seção de Venda Direta e Redes Sociais -->
+        <div class="w-full text-center py-10 bg-white rounded-2xl shadow-md border border-gray-100 flex flex-col items-center">
+            <h3 class="text-2xl font-extrabold text-gray-800 mb-8 px-4">Conecte-se e adquira nossas obras</h3>
+            
+            <div class="flex flex-col sm:flex-row gap-4">
+                <!-- Botão Mercado Livre -->
+                <a href="https://lista.mercadolivre.com.br/_CustId_3092494021" 
+                   target="_blank" 
+                   class="bg-[#FFF159] hover:bg-[#FFE600] text-gray-900 font-bold py-4 px-10 rounded-lg transition-all duration-300 shadow-sm hover:shadow-md inline-flex items-center space-x-3 transform hover:-translate-y-0.5 border border-gray-200">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                    </svg>
+                    <span>Mercado Livre</span>
+                </a>
+
+                <!-- Botão Instagram -->
+                <a href="https://instagram.com/sposito.art.br" 
+                   target="_blank" 
+                   class="btn-insta font-bold py-4 px-10 rounded-lg transition-all duration-300 shadow-sm hover:shadow-md inline-flex items-center space-x-3 transform hover:-translate-y-0.5">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                    <span>@sposito.art.br</span>
+                </a>
+            </div>
         </div>
 
     </main>
