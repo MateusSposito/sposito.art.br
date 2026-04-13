@@ -1,32 +1,74 @@
 /**
- * Componente de Contato e Redes - Mateus Sposito
- * Injeta a seção de contato com YouTube, Instagram e Mercado Livre.
+ * Componente de Contato e Redes - Elson Sposito
+ * Injeta a seção de contato com estilo de card personalizado.
  */
 function renderContato() {
     const contatoContainer = document.getElementById('contato-placeholder');
     
     if (contatoContainer) {
         contatoContainer.innerHTML = `
-            <!-- Contact Section -->
+            <style>
+                /* Estilo do Card (Sombra e Borda Arredondada) */
+                #contato .custom-card {
+                    background-color: white;
+                    border-radius: 1rem; /* rounded-2xl */
+                    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+                    padding: 2rem; /* p-8 */
+                }
+                
+                @media (min-width: 768px) {
+                    #contato .custom-card {
+                        padding: 2.5rem; /* md:p-10 */
+                    }
+                }
+
+                /* Estilo do Título Principal (Azul Escuro e Maior) */
+                #contato .section-title {
+                    color: #1e3a8a; /* blue-900 ou similar ao azul do seu print */
+                    font-size: 2.25rem; /* text-4xl */
+                    font-weight: 700; /* font-bold */
+                    margin-bottom: 2.5rem; /* mb-10 */
+                    text-align: center;
+                }
+
+                /* Subtítulo "Onde nos encontrar" */
+                #contato .sub-title {
+                    font-size: 1.25rem; /* text-xl */
+                    font-weight: 700; /* font-bold */
+                    color: #1f2937; /* gray-800 */
+                    margin-bottom: 1.5rem; /* mb-6 */
+                    text-align: center;
+                }
+
+                /* Texto de descrição */
+                #contato .description-text {
+                    font-size: 1.125rem; /* text-lg */
+                    color: #374151; /* gray-700 */
+                    line-height: 1.625; /* leading-relaxed */
+                    margin-bottom: 2rem; /* mb-8 */
+                    text-align: center;
+                }
+            </style>
+
             <section id="contato" class="mb-16">
-                <div class="card p-8 md:p-10 text-center">
-                    <h2 class="section-title mb-10">Entre em Contato</h2>
-                    <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                <div class="custom-card text-center">
+                    
+                    <h2 class="section-title">Entre em Contato</h2>
+                    
+                    <p class="description-text">
                         Para encomendas personalizadas ou dúvidas, entre em contato diretamente. Se deseja acompanhar o processo de criação ou adquirir uma peça pronta, visite nossos canais abaixo.
                     </p>
                     
-                    <!-- E-MAIL BUTTON -->
                     <div class="mb-12">
-                        <a href="mailto:mateus@sposito.art.br" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-3 px-10 rounded-full transition-all duration-300 shadow-md inline-block transform hover:-translate-y-1">
+                        <a href="mailto:elson@sposito.art.br" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-3 px-10 rounded-full transition-all duration-300 shadow-md inline-block transform hover:-translate-y-1">
                             Enviar E-mail
                         </a>
                     </div>
 
-                    <!-- REDES E LOJAS -->
-                    <h3 class="text-xl font-bold text-gray-800 mb-6">Onde nos encontrar</h3>
+                    <h3 class="sub-title">Onde nos encontrar</h3>
+                    
                     <div class="flex flex-wrap justify-center items-center gap-4">
                         
-                        <!-- YouTube -->
                         <a href="https://www.youtube.com/@SpositoArtBr" 
                            target="_blank" 
                            class="bg-[#FF0000] hover:bg-[#CC0000] text-white font-bold py-3 px-8 rounded-full transition-all duration-300 shadow-md w-full sm:w-auto flex items-center justify-center space-x-2 transform hover:-translate-y-1">
@@ -34,7 +76,6 @@ function renderContato() {
                             <span>YouTube</span>
                         </a>
 
-                        <!-- Instagram -->
                         <a href="https://www.instagram.com/sposito.art.br" 
                            target="_blank" 
                            class="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] hover:opacity-90 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 shadow-md w-full sm:w-auto flex items-center justify-center space-x-2 transform hover:-translate-y-1">
@@ -42,7 +83,6 @@ function renderContato() {
                             <span>Instagram</span>
                         </a>
 
-                        <!-- Mercado Livre -->
                         <a href="https://www.mercadolivre.com.br/pagina/spositoartbr#from=share_eshop" 
                            target="_blank" 
                            class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-full transition-all duration-300 shadow-md w-full sm:w-auto transform hover:-translate-y-1">
